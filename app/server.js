@@ -14,7 +14,7 @@ var app = express()
    .use(webpackHotMiddleware(webpack))
    .use(express.static(__dirname + "/dist"))
 
-   //load /views/index.html by default
+   //load index.html by default
    .get("/", function(req, res) {
       res.status(200).sendFile(path.join(__dirname + "/client/index.html"));
    })
