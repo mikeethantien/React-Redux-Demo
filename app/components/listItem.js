@@ -8,6 +8,10 @@ import Actions from "../redux/actions"
  */
 class ListItem extends Component {
 
+  formatPrice() {
+    this.props.dispatch(Actions.edit(this.props.item.id, "price", Number(this.props.item.price).toFixed(2)));
+  }
+
   handleAdd() {
     //Increment the id of the currently selected row, and use it as the new id for the new row that will be added.
     //There's a method inside the reducer to check the uniqueness of the id. If the id has been used, it will add the same row again.
@@ -34,7 +38,7 @@ class ListItem extends Component {
         </td>
         <td className="price">
           <span className="currency">$</span>
-          <input name="price" type="number" min="0" step="0.01" className="form-control" value={this.props.item.price} onChange={this.handleValueChange.bind(this)}></input>
+          <input name="price" type="number" min="0" step="0.01" className="form-control" value={this.props.item.price} onChange={this.handleValueChange.bind(this)} onBlur={this.formatPrice.bind(this)}></input>
         </td>
         <td className="total">
           <span className="currency">$</span>
