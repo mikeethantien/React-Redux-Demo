@@ -1,7 +1,13 @@
 import React, { Component } from "react";
 import Actions from "../redux/actions";
+
 import ListItem from "./listItem"
 
+
+/*
+ @class: List
+ @description: Renders out the table which displays the inventory.
+ */
 class List extends Component {
   getEntries() {
     return this.props.items.map((item) => {

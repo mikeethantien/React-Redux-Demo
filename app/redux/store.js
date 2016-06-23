@@ -6,6 +6,6 @@ var _createStore = compose(
   applyMiddleware(logger())
 )(createStore);
 
-export default function configureStore(initialState = {items: []}) {
+export default function configureStore(initialState) {
   return _createStore(reducer, initialState);
 }

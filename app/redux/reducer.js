@@ -9,7 +9,7 @@ function isIdUnique(state, id) {
   return true;
 }
 
-var reducer = function(state, action) {
+var reducer = function(state = {items: []}, action) {
   switch(action.type) {
     case "ADD":
       //Add a new item to the bottom of the list each time.
@@ -35,8 +35,7 @@ var reducer = function(state, action) {
     case "EDIT":
       return Object.assign({}, state, {
         items: state.items.map((item) => {
-          if(item.id === action.id)
-          {
+          if(item.id === action.id) {
             //Create a temp obj to store the changes
             var obj = {};
             obj[action.propName] = action.value;

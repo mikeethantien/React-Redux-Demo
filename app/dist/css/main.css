@@ -7,16 +7,10 @@
   display: none;
 }
 
-.input-form .currency {
-  position: absolute;
-  margin-top: 33px;
-  margin-left: -29px;
-}
-
 .table .currency {
   position: absolute;
-  margin-top: 8px;
-  margin-left: 5px;
+  margin-top: 7px;
+  margin-left: 4px;
 }
 .summary .right {
   float: right;
