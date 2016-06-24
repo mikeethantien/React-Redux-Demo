@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 /*
- @class: Summary
+ @class: Balance
  @description: Renders the balance of the inventory.
  */
 class Balance extends Component {
