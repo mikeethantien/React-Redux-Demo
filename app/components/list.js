@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import Actions from "../redux/actions";
 
+import Actions from "../redux/actions";
 import ListItem from "./listItem"
 
 
