@@ -33,6 +33,7 @@
     "babel-register": "^6.9.0",
     "expect": "^1.20.1",
     "mocha": "^2.5.3",
+    "nodemon": "^1.11.0",
     "webpack": "^1.12.13",
     "webpack-dev-middleware": "~1.6.1",
     "webpack-hot-middleware": "~2.10.0"
